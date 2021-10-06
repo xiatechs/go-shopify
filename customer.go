@@ -46,6 +46,7 @@ type Customer struct {
 	MultipassIdentifier       string             `json:"multipass_identifier,omitempty"`
 	OrdersCount               int                `json:"orders_count,omitempty"`
 	TaxExempt                 bool               `json:"tax_exempt,omitempty"`
+	TaxExemptions             []string           `json:"tax_exemptions,omitempty"`
 	TotalSpent                *decimal.Decimal   `json:"total_spent,omitempty"`
 	Phone                     string             `json:"phone,omitempty"`
 	Tags                      string             `json:"tags,omitempty"`
@@ -59,6 +60,7 @@ type Customer struct {
 	UpdatedAt                 *time.Time         `json:"updated_at,omitempty"`
 	Metafields                []Metafield        `json:"metafields,omitempty"`
 	Currency                  string             `json:"currency,omitempty"`
+	MarketingOptInLevel       int64              `json:"marketing_opt_in_level,omitempty"`
 }
 
 // Represents the result from the customers/X.json endpoint
