@@ -61,7 +61,7 @@ type Customer struct {
 	UpdatedAt                 *time.Time         `json:"updated_at,omitempty"`
 	Metafields                []Metafield        `json:"metafields,omitempty"`
 	Currency                  string             `json:"currency,omitempty"`
-	MarketingOptInLevel       int64              `json:"marketing_opt_in_level,omitempty"`
+	MarketingOptInLevel       string             `json:"marketing_opt_in_level,omitempty"`
 }
 
 // Represents the result from the customers/X.json endpoint
